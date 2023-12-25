@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* mapの表示 */
+body {
+    /* 背景色 */
+    background-color: #f5f0b4;
+    /* 文字を中央揃えに */
+    text-align: center;
+    margin: 50;
+  }
+  
+#map {
+    margin: 0 auto;
+    height: 60vh;
+    width: 60%;
+  }
+
+  /*ふきだしの背景色変更*/
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: #008b8b;
+  color: #FFF;
+}
+
+img {
+  width: 80%;
+}
