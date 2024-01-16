@@ -3,7 +3,7 @@ console.log('Hello world!');
 
 
 // mapの表示
-var map = L.map('map').setView([33.649241798686866, 130.4406793574221], 15);
+var map = L.map('map').setView([33.672293326486994, 130.44982208243596], 15);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -21,10 +21,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     }
   });
   
-  const whiteIcon = new circleIcon({ iconUrl: 'images/ico.png' }),
-    pinkIcon = new circleIcon({ iconUrl: 'images/ico_pink.png' });
-  
-  L.marker([33.649241798686866, 130.4406793574221],{ icon: whiteIcon }).addTo(map).bindPopup('ここだよ！！<br><img src="images/img01.png" alt="img">').openPopup();
-  L.marker([33.660067, 130.44385],{ icon: pinkIcon }).addTo(map).bindPopup('ここだよ！！<br><img src="images/img01.png" alt="img">').openPopup();
+  const whiteIcon = new circleIcon({ iconUrl: 'images/ico.png' });　
+  L.marker([33.672293326486994, 130.44982208243596],{ icon: whiteIcon }).addTo(map).bindPopup('ここだよ！！').openPopup();
   
   circle.bindPopup("半径1kmの範囲");
