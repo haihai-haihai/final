@@ -24,7 +24,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   const whiteIcon = new circleIcon({ iconUrl: 'images/ico.png' });　
   L.marker([33.672293326486994, 130.44982208243596],{ icon: whiteIcon }).addTo(map).bindPopup('ここだよ！！').openPopup();
   
-  circle.bindPopup("半径1kmの範囲");
+  //circle.bindPopup("半径1kmの範囲");
 
   // スライドショー
   $('.slider').slick({
